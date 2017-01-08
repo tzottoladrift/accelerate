@@ -510,9 +510,10 @@ h1 {
 
 #masthead nav ul {
 	list-style-type:none;
+
 }
 
-a:hover {
+#masthead a:hover {
 	text-decoration: none;
 }
 

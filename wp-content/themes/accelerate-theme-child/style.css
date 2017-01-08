@@ -13,7 +13,9 @@
 
 @import url("../accelerate-theme/style.css");
 
-
+body {
+	width: 1250px;
+}
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 440px;
@@ -58,8 +60,8 @@
 .individual-featured-work {
 	float: left;
 	list-style-type: none;
-	margin: 0 5% 0 0;
-	width: 29%;
+	margin: 0 35px 0 0;
+	width: 290px;
 }
 
 .individual-featured-work h3 {
@@ -106,7 +108,7 @@
 
 aside.case-study-sidebar {
 	float: left;
-	width: 300px;
+	width: 320px;
 }
 
 aside.case-study-sidebar h2 {
@@ -127,9 +129,13 @@ aside.case-study-sidebar h5 {
 	margin-top: 10px;
 }
 
-aside.case-study-sidebar h6{
-	font-weight: normal;
+aside.case-study-sidebar h6 { 
+	font-weight: lighter;
 	margin-top: 15px;
+}
+
+.case-study-sidebar h6:hover {
+	color: #45ac9d;
 }
 
 aside.case-study-sidebar p {
@@ -139,19 +145,20 @@ aside.case-study-sidebar p {
 div.case-study-images {
 	float: left;
 	width: 606px;
-	margin-left: 40px;
+	margin-left: 30px;
 	
 }
 
 div.case-study-images img {
 	display: block;
+	margin-top: 60px;
 	margin-bottom: 85px;
 	border: 1px solid #dddddd;
 	width:606px;
 	height:auto;
 }
 
-/* Archive Page */
+/* Archive Page 
 
 .archive-case-study-images {
 	margin-top: 60px;
@@ -184,7 +191,8 @@ aside.archive-case-study-sidebar {
 aside.archive-case-study-sidebar h2 {
 	font-size: 24px;
 	margin-top: 80px;
-	/*font-family: 'OpenSans', 'sans-serif';*/
+	color: #45ac9d;
+	font-family: 'OpenSans', 'sans-serif';
 	font-weight: bold;
 	color: purple;
 }
@@ -203,7 +211,7 @@ aside.archive-case-study-sidebar h5 {
 	font-family: 'OpenSans', 'sans-serif';
 }
 
-aside.archive-case-study-sidebar h6{
+aside.archive-case-study-sidebar h4 {
 	font-weight: bold;
 	margin-top: 15px;
 	color: #45ac9d;

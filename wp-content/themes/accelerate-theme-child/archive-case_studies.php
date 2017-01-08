@@ -23,17 +23,17 @@ get_header(); ?>
 			$services = get_field('services'); 
 	?>
 
-		<article class="archive-case-study">
-			<aside class="archive-case-study-sidebar">
+		<article class="case-study">
+			<aside class="case-study-sidebar">
 				<h2><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
 				<h5><?php echo $services; ?></h5>
 
 				<?php the_excerpt(); ?>
 	
-				<h6><strong><a href="<?php the_permalink(); ?>">View Project</a></strong></h6>
+				<h6><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></h6>
 			</aside>
 
-			<div class="archive-case-study-images">
+			<div class="case-study-images">
 					<?php if ($image_1) { 
 						echo wp_get_attachment_image( $image_1, $size ); 
 					} ?>

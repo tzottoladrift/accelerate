@@ -29,12 +29,12 @@ get_header(); ?>
 	<article class="case-study">
 		<aside class="case-study-sidebar">
 			<h2><?php the_title(); ?></h2>
-			<h5><?php echo $serivces; ?></h5>
+			<h5><?php echo $services; ?></h5>
 			<h6>Client: <?php echo $client; ?></h6>
 
 		<?php the_content(); ?>
 
-			<p><a href="<?php echo $link; ?>">Site Link</a></p>
+			<p><a href="<?php echo $site_link; ?>">Site Link</a></p>
 
 		</aside>
 
