@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying Case Studies pages
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -28,7 +28,7 @@ get_header(); ?>
 
 	<article class="case-study">
 		<aside class="case-study-sidebar">
-			<h2><?php the_title(); ?></h2>
+			<h2> <?php the_title(); ?></h2>
 			<h5><?php echo $services; ?></h5>
 			<h6>Client: <?php echo $client; ?></h6>
 

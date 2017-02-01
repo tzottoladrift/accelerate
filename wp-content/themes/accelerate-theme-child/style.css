@@ -13,9 +13,7 @@
 
 @import url("../accelerate-theme/style.css");
 
-body {
-	width: 1250px;
-}
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 440px;
@@ -68,7 +66,8 @@ body {
 	font-size: 18px;
 	font-weight: normal;
 	margin-top: 24px;
-	text-align: center;
+	text-align: center; * Set up the theme and provides some helper functions, which are used in the
+
 }
 
 .individual-featured-work:nth-child(3n) {
@@ -78,14 +77,148 @@ body {
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
-    }
+}
+
+/*About Page Stylings*/
+
+.about-page h2 {
+	text-align: center;
+	line-height: 40px;
+	font-family: 'OpenSans';
+	font-weight: 600;
+	color: white;
+	padding-top: 85px;
+	height: 140px;
+	margin-top: 0;
+}
+
+.about-page h2 span {
+	color: #45ac9d;
+}
+
+.about-page {
+	background: url("img/taxi-small.png") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	margin: 0 0 10px 0;
+	height: 305px;
+	background-size: cover;
+	background-position: right bottom;	
+}
+
+.about-page h3 {
+	text-align: center;
+}
+
+.about-page p {
+	text-align: center;
+}
+
+.middle .title {
+	/*margin-top: 60px;*/
+	clear: both;
+	text-align: center;
+	margin-bottom: 70px;
+
+}
+
+.middle .title h3 {
+	margin-bottom: 35px;
+	
+
+}
+
+.middle .title p {
+	line-height: 10px;
+	margin-bottom: 0;
+	
+}
+
+.services, .services-odd {
+	overflow: auto;
+	clear: both;
+	height: 270px;
+	margin: 0 0 50px 0;
+}
+
+.services .icon {
+	float: left;
+	width: 30%;
+	margin-right: 2%;
+	height: 215px;
+	
+}
+
+.description {
+	float: left;
+	width: 68%;
+}
+
+.description h2 {
+	font-family: 'OpenSans'
+	font-size: 25px;
+	font-weight: 600;
+	
+
+}
+
+.description p {
+	font-family: 'OpenSans'
+	font-weight: 400;
+	
+}
+
+.services-odd .icon {
+	float: right;
+	width: 30%;
+	margin-left: 2%;
+}
+
+.contact-button {
+	height: 145px;
+	border-top: 2px solid #a6a6a6;
+	border-bottom: 2px solid #a6a6a6;
+	float: left;
+	width: 100%;
+}
+
+.contact-button h2 {
+	margin-left: 155px;
+	margin-top: 60px;
+	width: 400px;
+	display: inline-block;
+}
+
+.contact-button h3 {
+	height: 38px;
+	width: 240px;
+	background-color: #45ac9d;
+	font-family: 'Montserrat';
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding-top: 17px;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+/* Blog/Twitter section*/
+
+.blog-tweets {
+	margin-bottom: 75px;
+	height: 395px;
+	border-bottom: 2px solid #a6a6a6;
+  	
+}
+
+/* Blog Post Stylings */
 
 .blog-post {
 	width: 50%;
+	float: left;
+	
 }
 
 .blog-post h4 {
-	font-size: 16px;
+	font-size: 16.5px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
@@ -97,12 +230,60 @@ body {
 	font-weight: bold;
 }
 .blog-post .read-more-link {
-	font-size: 24px;
+	font-size: 15px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/* Twitter Feed*/
+
+.twitter-feed {
+	width: 30%;
+	float: left;
+	text-align: left;
+	margin-left: 100px;
+}
+
+.twitter-feed h4 {
+	font-size: 16.5px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.twitter-feed h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
+.home .widget {
+	padding: 0;
+
+}
+
+.home .widget ul {
+	margin: 0 0 24px 0;
+}
+
+.twitter-feed li {
+	list-style: none;
+	font-size: 16.5px;
+	font-family: 'OpenSans';
+	font-weight: lighter;
+
+}
+
+.twitter-feed .follow-us-link {
+	font-size: 15px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
 
 /* Case Studies */
 
@@ -156,6 +337,80 @@ div.case-study-images img {
 	border: 1px solid #dddddd;
 	width:606px;
 	height:auto;
+}
+
+/* 404 Page */
+
+.lost-pic {
+	height: 500px;
+	width: auto;
+	margin: 20px auto;
+}
+
+.error404 {
+	text-align: center;
+	color: #45ac9d;
+	font-family: 'Montserrat';
+
+}
+
+.james a {
+	font-size: 30px;
+	color: #45ac9d;
+}
+
+/* Contact Page*/
+
+.contact-page {
+	width: 70%;
+	margin: 30px auto;
+
+}
+
+.contact-page h2 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
+.contact-page p {
+	font-family: 'OpenSans'
+	font-weight: lighter;
+	font-size: 16.5px;
+}
+
+.nf-field-label {
+	font-family: 'OpenSans';
+	font-size: 14px;
+	font-weight: lighter;
+}
+}
+
+#nf-field-1 {
+	height: 40px;
+	border: 1px solid #dddddd;
+}
+
+#nf-field-2 {
+	height: 40px;
+	border: 1px solid #dddddd;
+}
+
+#nf-field-3 {
+	height: 180px;
+	border: 1px solid #dddddd;
+}
+
+#nf-field-4 {
+	background-color: #45ac9d;
+	margin-left: 410px;
+	color: #fff;
+	width: 210px;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 14px;
+	font-size: 16.5px;
+	font-family: 'Montserrat';
+
 }
 
 /* Archive Page 

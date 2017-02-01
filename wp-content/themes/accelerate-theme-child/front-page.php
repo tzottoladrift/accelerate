@@ -49,10 +49,10 @@ get_header(); ?>
 	</div>
 </section>
 
-
-<section class="recent-posts">
-	<div class="site-content">
- 		<div class="blog-post">
+<section class="blog-tweets">
+  <section class="recent-posts">
+	 <div class="site-content">
+ 		 <div class="blog-post">
     		<h4>From the Blog</h4>
     			<?php query_posts('posts_per_page=1'); ?>
      				<?php while ( have_posts() ) : the_post(); ?>
@@ -62,7 +62,18 @@ get_header(); ?>
      			<?php endwhile; ?> 
     		<?php wp_reset_query(); ?>
     	</div>
-	</div>
-</section>
+	 </div>
+  </section>
+  <section class="twitter-feed">
+    <h4>Recent Tweets</h4>
+    <h2>@littleturtleart</h2>
+    <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+      <div id="secondary" class="widget-area" role="complementary">
+        <?php dynamic_sidebar( 'sidebar-2' ); ?>
+      </div>
+      <a class="follow-us-link" href="http://www.twitter.com/littleturtleart">Follow Us <span>›</span></a>
 
+    <?php endif; ?>
+  </section>
+</section>
 <?php get_footer(); ?>
