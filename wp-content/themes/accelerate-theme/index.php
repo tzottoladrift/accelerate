@@ -25,7 +25,7 @@ get_header(); ?>
 				// Start the Loop.
 				while ( have_posts() ) : the_post(); ?>
 				
-					<article class="post-entry">
+					<article class="post-entry individual-post">
 						<div class="entry-wrap">
 							<header class="entry-header">
 								<div class="entry-meta">

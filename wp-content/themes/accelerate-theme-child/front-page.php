@@ -65,8 +65,6 @@ get_header(); ?>
 	 </div>
   </section>
   <section class="twitter-feed">
-    <h4>Recent Tweets</h4>
-    <h2>@littleturtleart</h2>
     <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
       <div id="secondary" class="widget-area" role="complementary">
         <?php dynamic_sidebar( 'sidebar-2' ); ?>
